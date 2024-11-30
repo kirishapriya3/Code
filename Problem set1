@@ -1,0 +1,112 @@
+1) import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+         System.out.print("Enter a number: ");
+         int num = scan.nextInt();
+         scan.nextLine(); 
+         
+        System.out.println("Enter a name: ");
+        String name = scan.nextLine();
+        
+         System.out.println("Enter a char: ");
+        char a = scan.next().charAt(0);
+        
+         System.out.println(num);
+         System.out.println(name);
+         System.out.println(a);
+
+        scan.close();
+    }    
+}    
+OUTPUT:Enter a number: 2
+Enter a name: 
+Name
+Enter a char: 
+y
+2
+Name
+y
+
+2)CHECK WHETHER TRIANGLE CAN BE FORMED OR NOT
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+         System.out.print("Enter a numbers: ");
+         int a = scan.nextInt();
+          int b = scan.nextInt();
+           int c = scan.nextInt();
+           int sum = a+b+c;
+           if(sum==180){
+               System.out.println("Triangle formed");
+           }
+           else{
+               System.out.println("Triangle cannot be formed");
+           }
+    }
+}
+OUTPUT:Enter a numbers: 45
+45
+45
+Triangle cannot be formed
+
+3)import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int mark = scan.nextInt();
+        if(mark>0){
+            if(mark>=90){
+                System.out.println("grade A");
+            }
+            else if(mark>=80){
+                System.out.println("Grade B");
+            }
+            else if(mark>=60){
+                System.out.println("Grade C");
+            }
+            else if(mark>=35){
+                System.out.println("Grade D");
+            }
+            else {
+                System.out.println("Fail");
+            }
+        }
+        else{
+                System.out.println("Invalid no");
+            }
+        
+    }
+}
+OUTPUT:95
+Grade A
+
+4)import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int size = scan.nextInt();
+        switch (size) {
+            case 29:
+                System.out.println("small");
+                break;
+            case 30:
+                System.out.println("Medium");
+                break;
+            case 38:
+                System.out.println("Large");
+                break;
+            case 42:
+                System.out.println("XLarge");
+                break;
+            default:
+            System.out.println("Invalid input");
+            break;
+        }        
+    }           
+}  
+OUTPUT:Sample Input
+29
+Your Output
+small
