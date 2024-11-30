@@ -1,0 +1,72 @@
+Write a program which takes two values x and y. Prints x for y number of times.
+Input:
+2 
+3
+CODE:
+class Main {
+    public static void main(String[] args) {
+       int x=2;
+       int y=3;
+       for(int i=0;i<y;i++){
+           System.out.println(x);
+       }
+    }
+}
+OUTPUT:
+Your Output
+2
+2
+2
+
+2)Write a program to take x and print multiples of x till 1000.
+Input:
+100
+Expected Output:
+100
+.
+.
+1000
+CODE:
+class Main {
+    public static void main(String[] args) {
+       int x=100;
+       for(int i=100;i<=1000;i=i+x){
+           System.out.println(i);
+       
+       }
+    }
+}
+OUTPUT:
+Your Output
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+
+3)
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       String firstName=scan.nextLine();
+       String lastName=scan.nextLine();
+       int n = scan.nextInt();
+       for(int i=0;i<n;i++){
+           System.out.print(firstName);
+           System.out.println(lastName);
+       }
+    }
+}
+OUTPUT:
+Your Output
+NandyRaja
+NandyRaja
+NandyRaja
+NandyRaja
+NandyRaja
