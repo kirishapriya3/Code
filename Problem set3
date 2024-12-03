@@ -1,0 +1,57 @@
+Input:
+n = 4
+Expected output:
+****
+***
+**
+*
+CODE:
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    int n=4;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n-i+1;j++){
+	            System.out.print("*");
+	        }
+	       System.out.println();
+	    }
+	}
+}
+OUTPUT:
+****
+***
+**
+*
+
+2)Input:
+n= 6
+******
+*****
+****
+***
+**
+*
+CODE:
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    int n=6;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n-i+1;j++){
+	            System.out.print("*");
+	        }
+	       System.out.println();
+	    }
+	}
+}
+OUTPUT:
+******
+*****
+****
+***
+**
+*
+
