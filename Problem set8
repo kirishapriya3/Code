@@ -1,0 +1,43 @@
+Input : 
+325345
+Expected output:
+543523
+CODE:
+class Codechef{
+	public static void main (String[] args) {
+int n=325345
+
+;
+int sum=0;
+while(n>0){
+    int last=n%10;
+    sum=sum*10+last;
+    n=n/10;
+}
+System.out.println(sum);
+}
+}
+O/P:
+543523
+
+
+Testcase 2 :
+Input : 
+987987
+Expected output:
+789789
+CODE:
+class Codechef{
+	public static void main (String[] args) {
+int n=987987;
+int sum=0;
+while(n>0){
+    int last=n%10;
+    sum=sum*10+last;
+    n=n/10;
+}
+System.out.println(sum);
+}
+}
+O/P:
+789789
