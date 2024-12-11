@@ -1,0 +1,49 @@
+Write a program that gets n as input and print the number of digits in the number
+Testcase 1 :
+Input : 
+325345
+Expected output:
+6
+CODE:
+import java.util.Scanner;
+class Codechef{
+	public static void main (String[] args) throws java.lang.Exception{
+	    Scanner scan=new Scanner(System.in);
+	    int n = scan.nextInt();
+	    int count=1;
+	    int num=n%10;
+if(n==0){
+	        System.out.println(1);
+	        return;
+	    }
+	    while(n!=0){
+	        count++;
+	        n=n/10;
+	    }
+	   System.out.println(count);
+	}
+}
+O/P:
+6
+2)Input : 
+9879
+Expected output:
+4
+CODE:
+class Codechef{
+	public static void main (String[] args) {
+int n=9876;
+int count=0;
+int num=n%10;
+if(n==0){
+	        System.out.println(1);
+	        return;
+	    } while(n!=0){
+	        count++;
+	        n=n/10;
+	    }
+	   System.out.println(count);
+	}
+}
+O/P:
+4
