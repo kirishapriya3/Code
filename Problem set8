@@ -126,7 +126,7 @@ class Solution
 O/P:6
 I.P:5 O/P:120
 CODE:
-import java.util.Scanner();
+import java.util.Scanner;
 class Solution
 {
         public static void main(String[] args){
