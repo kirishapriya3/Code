@@ -41,3 +41,46 @@ System.out.println(sum);
 }
 O/P:
 789789
+
+SET9:
+1)Input : 
+325345
+Expected output:
+6
+import java.util.Scanner;
+class Codechef
+{
+public static void main (String[] args) throws java.lang.Exception{
+	    Scanner scan = new Scanner(System.in);
+	    int n=scan.nextInt();
+	    int count=0;
+	    while(n>0){
+	        int res =n%10;
+	        count++;
+	        n=n/10;   }
+	    System.out.println(count);
+	   }
+}
+OUTPUT:6
+
+2)Testcase 2 :
+Input : 
+9879
+Expected output:
+4
+CODE:
+import java.util.Scanner;
+class Codechef{
+	public static void main (String[] args) throws java.lang.Exception{
+	    Scanner scan = new Scanner(System.in);
+	    int n=scan.nextInt();
+	    int count=0;
+	    while(n>0){
+	        int res =n%10;
+	        count++;
+	        n=n/10;
+	        }
+	    System.out.println(count);
+	   }
+}
+OUTPUT:4
