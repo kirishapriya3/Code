@@ -106,3 +106,38 @@ class Solution{
     }
 }
 OUTPUT:6
+
+6)Factorial of a number
+I/P:3 O/P:6
+CODE:
+import java.util.Scanner;
+class Solution
+{
+        public static void main(String[] args){
+        Scanner scan =new Scanner(System.in);  
+	int n=scan.nextInt();
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+O/P:6
+I.P:5 O/P:120
+CODE:
+import java.util.Scanner();
+class Solution
+{
+        public static void main(String[] args){
+	Scanner scan =new Scanner(System.in);  
+	int n=scan.nextInt();
+	int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+O/P:5
+120
