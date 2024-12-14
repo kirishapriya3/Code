@@ -1,4 +1,4 @@
-Input : 
+1)Input : Reverse of a Number
 325345
 Expected output:
 543523
@@ -21,7 +21,7 @@ O/P:
 543523
 
 
-Testcase 2 :
+2)Testcase 2 :Reverse of a Number
 Input : 
 987987
 Expected output:
@@ -42,8 +42,8 @@ System.out.println(sum);
 O/P:
 789789
 
-SET9:
-1)Input : 
+3)SET9:
+1)Input : Count of a Number
 325345
 Expected output:
 6
@@ -63,7 +63,7 @@ public static void main (String[] args) throws java.lang.Exception{
 }
 OUTPUT:6
 
-2)Testcase 2 :
+4)Testcase 2 :Count of a Number
 Input : 
 9879
 Expected output:
@@ -84,3 +84,25 @@ class Codechef{
 	   }
 }
 OUTPUT:4
+
+5)Given a number N, find the sum of first and last digit of N.
+ Input: N = 12345
+Output: 6
+Explanation: 1st and last digits are 1 and 5.
+CODE:
+class Solution{
+    public int corner_digitSum(int n){
+        int ld=0;
+        if(n<10){
+            return n;
+        }
+        else{
+       ld=n%10;
+        while(n>=10){
+            n=n/10;
+        }
+    }
+   return (ld+n) ; 
+    }
+}
+OUTPUT:6
