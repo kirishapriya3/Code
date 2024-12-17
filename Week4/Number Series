@@ -1,0 +1,76 @@
+2)Given an integer n, calculate the sum of series 13 + 23 + 33 + 43 + … till n-th term.
+Examples:
+Input: n = 5
+Output: 225
+Explanation: 13 + 23 + 33 + 43 + 53 = 225
+class Solution {
+    int sumOfSeries(int n) {
+        int sum=0,x=0;
+        for(int i=1;i<=n;i++){
+            x=i*i*i;
+            sum=sum+x;
+        }
+        return sum;
+    }
+}
+
+3)Sum of fifth powers of the first n natural numbers
+Given a number N.Find the sum of fifth powers of natural numbers till N i.e. 15+25+35+..+N5.
+Example 1:
+Input:
+N=2
+Output:
+33
+Explanation:
+The sum is calculated as 15+25=1+32=33.
+class Solution {
+    long sumOfFifthPowers(long N) {
+        long x=0,val=5;
+        for(int i=1;i<=N;i++){
+            long power=(long)Math.pow(i,val);
+            x=x+power;}
+        return x;}
+}
+
+4)Reverse digits
+You are given an integer n. Your task is to reverse the digits, ensuring that the reversed number has no leading zeroes.
+Examples:
+Input: 200
+Output: 2
+Explanation: By reversing the digits of number, number will change into 2.
+
+class Solution {
+    public int reverseDigits(int n) {
+        int sum=0,val=0;
+         while(n>0){
+            sum=n%10;
+            if(sum!=0){
+                val=val*10+sum;
+                n=n/10; }
+            else{
+                n=n/10; }
+          }
+        return val;}
+}
+
+5)Squares Difference
+Given an integer N, find the absolute difference between sum of the squares of first N natural numbers and square of sum of first N natural numbers.
+Example 1:
+Input: N = 2
+Output: 4 
+Explanation: abs|(12 + 22) - (1 + 2)2| = 4.
+class Solution {
+    static long squaresDiff(int N){
+        long sum=0,val=0,square=1;
+        for(long i=1;i<=N;i++){
+            long power=(long)Math.pow(i,2);
+            sum=sum+power;
+        }
+        for(long j=1;j<=N;j++){
+            val=val+j;
+            square=val*val;
+        }
+        long res=Math.abs(sum-square);
+        return res;
+    }
+}
