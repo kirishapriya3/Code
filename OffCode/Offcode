@@ -1,4 +1,4 @@
-class Codechef
+1)class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -23,3 +23,28 @@ class Codechef
 	}
 }
 o/p:ABCDEFG
+2)
+import java.util.Scanner;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception{
+    Scanner sc=new Scanner(System.in);
+    String M = sc.nextLine();
+    String rock="rock";
+    String scissor="scissor";
+    String paper="paper";
+    //compare
+    if (M.equals(rock)){
+        System.out.println("paper");
+    }
+    else if (M.equals(scissor)){
+        System.out.println("rock");
+    }
+    else if (M.equals(paper)){
+       System.out.println("scissor");
+    }
+   
+	}
+}
+I/p:rock
+o/p:paper
