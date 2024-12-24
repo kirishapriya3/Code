@@ -1,0 +1,25 @@
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    String s="AbCdEfG";
+	    int upr_cnt=0;
+	    int lwr_cnt=0;
+	    for(int i=0;i<s.length();i++){
+	        if(s.charAt(i)>=65 && s.charAt(i)<=90){
+	            upr_cnt++;
+	        }
+	        if(s.charAt(i)>=97 && s.charAt(i)<=122){
+	            lwr_cnt++;
+	        }
+	    }
+	    if(upr_cnt>lwr_cnt){
+	    s=s.toUpperCase();
+	    }
+	    if(lwr_cnt>upr_cnt){
+	       s=s.toLowerCase();
+	    }
+        System.out.println(s);
+	}
+}
+o/p:ABCDEFG
